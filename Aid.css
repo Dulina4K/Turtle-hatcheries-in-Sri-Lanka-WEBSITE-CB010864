@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    height: 3800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0,0,0,0.75)),url(./Images/bkg8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    .navbar{
+        width: 87%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 120px;
+        cursor: pointer;
+    }
+    
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    
+    .navbar ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+    
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #1bc1c7;
+    }
+    
+    .content h1{
+        font-size: 65px;
+        font-family: 'Bubblegum Sans';
+        position: absolute;
+        font-weight: 25;
+        margin-left: 750px;
+        margin-top: 100px;
+    }
+    
+    .content p{
+        text-align: justify;
+        margin-left: 130px;
+        margin-top: -300px;
+        margin-right: 1050px;
+        font-size: 30px;
+        font-family: 'Bubblegum Sans';
+        color: #18c3c9;
+        position: absolute;
+        font-weight: 50;
+        line-height: 40px;
+    }
+    
+    .selectk{
+        font-size: 30px;
+        font-family: 'Bubblegum Sans';
+        color: #fff;
+        position: absolute;
+        margin-left: 980px;
+        margin-top: 280px;
+    }
+
+    .selectn{
+        font-size: 20px;
+        color: #21d8f8;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: -115px;
+    }
+
+    .movec{
+        margin-left: 975px;
+        margin-top: 350px;
+        position: absolute;
+    }
+
+    button{
+        width: 150px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        padding: 8px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+
+    .content2 h1{
+        font-size: 40px;
+        color: rgb(27, 193, 199);
+        position: absolute;
+        font-family: 'Bubblegum Sans';
+        font-weight: 25;
+        margin-left: 950px;
+        margin-top: 630px;
+    }
+
+    .paymns{
+       height: 100px;
+       margin-top: 700px;
+       margin-left: 950px;
+    }
+
+    .myBox {
+        text-align: justify;
+        margin-left: 950px;
+        margin-top: 60px;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        font: 24px/36px sans-serif;
+        width: 650px;
+        height: 225px;
+        overflow: scroll;
+        }
+
+        .doneh{
+            width: 700px;
+            margin-top: -800px;
+            margin-left: 125px;
+            position: absolute;
+        }
+
+        .shopping h1{
+            font-size: 65px;
+            font-family: 'Bubblegum Sans';
+            position: absolute;
+            font-weight: 25;
+            margin-left: 750px;
+            margin-top: 200px;
+            color: rgb(27, 193, 199);
+
+        }
+
+        .rowbut{
+            position: absolute;
+            margin-left: 410px;
+            margin-top: 1100px;
+        }
+
+        .rowbut2{
+            position: absolute;
+            margin-left: 410px;
+            margin-top: 2065px;
+        }
+        
+
+        .tool1{
+            margin-top: 400px;
+            margin-left: 300px;
+            position: absolute;
+            width: 400px;
+        }
+
+        .bracelet{
+        text-align: justify;
+        margin-left: 300px;
+        margin-top: 875px;
+        margin-right: 1080px;
+        font-size: 30px;
+        font-family: 'Bubblegum Sans';
+        color: #18c3c9;
+        position: absolute;
+        font-weight: 50;
+        line-height: 40px;
+        }
+
+        .tool2{
+            margin-top: 400px;
+            margin-left: 1050px;
+            position: absolute;
+            width: 400px;
+        }
+
+        .toy{
+            text-align: justify;
+            margin-left: 1050px;
+            margin-top: 875px;
+            margin-right: 320px;
+            font-size: 30px;
+            font-family: 'Bubblegum Sans';
+            color: #18c3c9;
+            position: absolute;
+            font-weight: 50;
+            line-height: 40px;
+        }
+
+        .tool3{
+            margin-top: 1400px;
+            margin-left: 300px;
+            position: absolute;
+            width: 400px;
+        }
+
+        .poster{
+        text-align: justify;
+        margin-left: 300px;
+        margin-top: 1870px;
+        margin-right: 1080px;
+        font-size: 30px;
+        font-family: 'Bubblegum Sans';
+        color: #18c3c9;
+        position: absolute;
+        font-weight: 50;
+        line-height: 40px;
+        }
+
+        .tool4{
+            margin-top: 1400px;
+            margin-left: 1050px;
+            position: absolute;
+            width: 400px;
+        }
+
+        .sticker{
+            text-align: justify;
+            margin-left: 1050px;
+            margin-top: 1870px;
+            margin-right: 320px;
+            font-size: 30px;
+            font-family: 'Bubblegum Sans';
+            color: #18c3c9;
+            position: absolute;
+            font-weight: 50;
+            line-height: 40px;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 1;
+            left: 0;
+            right: 0;
+            background: #111;
+            height: auto;
+            width: 100vw;
+            font-family: "Open Sans";
+            padding-top: 40px;
+            color: #fff;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
+        
+        }
+        .socials a:hover i{
+            color: aqua;
+        }
+        
+        .footer-bottom{
+            background: #000;
+            width: 100vw;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+
+        .highmove{
+            margin-left: 90px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+            }
+            
+            ::-webkit-scrollbar-track {
+            border: 1px solid #1bc1c7;
+            border-radius: 10px;
+            }
+            
+            ::-webkit-scrollbar-thumb {
+            background: #1bc1c7;  
+            border-radius: 10px;
+            }
+            
+            ::-webkit-scrollbar-thumb:hover {
+            background: #1bc1c7;  
+            }
+            </style>
+            </head>
+            <body>
