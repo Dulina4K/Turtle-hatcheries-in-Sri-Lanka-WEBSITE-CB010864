@@ -13,6 +13,42 @@
     background-attachment: fixed;
 }
 
+button{
+    margin-left: 500px;
+    margin-top: -145px;
+    width: 160px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
     .navbar{
         width: 87%;
         margin: auto;
@@ -98,13 +134,17 @@
         color: transparent;
     }
 
+    .content h3{
+        color: white;
+    }
+
     .undersc p{
         text-align: justify;
         margin-left: 550px;
         margin-right: 550px;
         font-size: 30px;
         font-family: 'Bubblegum Sans';
-        color: #19e0d0;
+        color: rgb(25, 225, 208);
         font-weight: 100;
         line-height: 40px;
     }
@@ -145,7 +185,7 @@
     color: #ffffff;
     font-weight: 25;
     margin-top:  300px;
-    margin-left: 200px;
+    margin-left: 165px;
 }
 
 iframe{
@@ -228,6 +268,15 @@ footer{
 .mv{
     height: 20px;
     background-color: #fff;
+}
+
+.thenxtlvl{
+    color: rgb(25, 225, 208);
+    font-family: 'Bubblegum Sans';
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -130px;
+    font-size: 25px;
 }
 
 ::-webkit-scrollbar {

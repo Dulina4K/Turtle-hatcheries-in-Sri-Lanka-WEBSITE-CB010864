@@ -1,0 +1,210 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Abel;
+}
+
+.section1{
+    margin-top: 500px;
+}
+
+.rghtscn{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0%;
+}
+
+.Dates{
+    box-shadow: 2px 2px 40px;
+    background-color: aliceblue;
+    padding: 40px;
+    margin: 5% 1% 1% 15%; 
+    border-radius: 20px;  
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+
+}.Dates input{
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.Guests{
+    box-shadow: 2px 2px 40px;
+    padding: 40px;
+    background-color: aliceblue;
+    margin: 5% 1% 1% 15%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}label{
+    font-size: 20pt;
+    padding: 4px;
+    display: inline-block;
+    inline-size: 300px;
+
+}.Guests input{
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.duration{
+    box-shadow: 2px 2px 40px;
+    background-color: aliceblue;
+    margin: 5% 1% 5% 15%;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    font-size: 20pt;
+    justify-content: center;
+
+}.duration select{
+    margin: 1%;
+}
+
+button{
+    font-size: 20px;
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #39803f;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 30px;
+}
+
+.table{
+    box-shadow: 2px 2px 40px;
+    background-color: aliceblue;
+    margin-top: 500px;
+    margin-left: 100px;
+    width: 950px;
+    height: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    font-family: oswald;
+    font-size: 15pt;
+}
+
+table td, th{
+    padding: 1%;
+    height: 39px;
+}
+
+@media screen and (max-width: 1200px){
+    .nav ul{
+        display: grid;
+        grid-template-columns: auto;
+        flex-direction: column;
+        
+    }.nav ul li{
+        margin-bottom: 10px;
+        margin-right:5%;
+    }
+    
+}
+
+@media screen and (max-width:1000px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }.container img,h2{
+        width: auto;
+    }.rghtscn{
+        flex-direction: column;
+    }.table{
+        width: 60%;
+    }.duration, .Guests, .Dates{
+        margin: 5% 9%;
+    }
+}
+
+body{
+    height: 1800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(./Images/nxtlvl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1{
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    margin-top: 75px;
+    color: indigo;
+    padding-bottom: 140px;
+}
+
+.navbar{
+    position: absolute;
+    margin-left: 250px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 6px;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #39803f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 65%;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: hwb(0 100% 0%)0%, 100%;
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px;
+    }
+
+.navbar ul li a{
+    font-size: 22px;
+    -webkit-text-stroke: 0.5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.alonestand1{
+    margin-top: -230px;
+    margin-left: -150px;
+
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buy Tickets</title>
+        <link rel="stylesheet" href="Buy Tickets.css">
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png">
+        <link rel="manifest" href="/Images/site.webmanifest">
+        <link rel="mask-icon" href="/Images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/Images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/Images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <h1>BUY Tickets</h1>
+                <ul>
+                    <li><a href="#">Tickets&nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Add-ons&nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Details&nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Additional Details&nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Payment&nbsp;&nbsp;&nbsp;></a></li>
+                    <li><a href="#">Confirmation</a></li>
+            <div class="alonestand1">
+                <a href="Hikkaduwa Turtle Hatchery.html">< Home</a>
+            </div>
+        </header>
+        <section>
+            <form id="form" method="get">
+            <div class="rghtscn">
+                <div class="section1">
+                    <section class="Dates">
+                        <Label for="date">When are you coming?</Label>
+                        <input type="date" name="date" id="date" min="2023-08-14" required >
+                    </section>
+            
+                    <div class="Guests">
+                        <section>
+                            <h1>Guests</h1>
+                            <label for="sladult">Adult (Local)</label>
+                            <input type="number" name="sladult" id="sladult" min="0" placeholder="0" required>
+                            <br>
+            
+                            <label for="slchild">Child (Local)</label>          
+                            <input type="number" name="slchild" id="slchild" min="0" placeholder="0">
+                            <br>
+            
+                            <label for="fradult">Adult (Foreign)</label>
+                            <input type="number" name="fradult" id="fradult" min="0" placeholder="0">
+                            <br>          
+            
+                            <label for="frchild">Child (Foreign)</label>
+                            <input type="number" name="frchild" id="frchild" min="0" placeholder="0">
+                            <br>            
+            
+                            <label for="infant">Infant</label>
+                            <input type="number" name="infant" id="infant" min="0" placeholder="0">
+                            <br>
+                        </section>
+                        <table id="price_table" border="2">
+                            <tr>
+                                <th>Type</th>
+                                <th>Normal(per hour)</th>
+                                <th>Peak (per hour)</th>
+                            </tr>
+    
+                            <tr>
+                                <td>Adult (local)</td>
+                                <td>$4</td>
+                                <td>$6</td>
+                            </tr>
+    
+                            <tr>
+                                <td>Child (local)</td>
+                                <td>$2</td>
+                                <td>$3</td>
+                            </tr>
+    
+                            <tr>
+                                <td>Adult (Foreign)</td>
+                                <td>$10</td>
+                                <td>$13</td>
+                            </tr>
+    
+                            <tr>
+                                <td>Child (Foreign)</td>
+                                <td>$5</td>
+                                <td>$8</td>
+                            </tr>
+                        </table>            
+                    </div>
+                    
+                    <div class="duration">
+                        <label for="duration">Duration<h6>proceed with (ctrl +) </h6></label>
+                        <select name="duration" id="duration" required multiple>
+                            <option value="">select</option>
+                            <option value="7-8">7:00 AM - 8:00 AM </option>
+                            <option value="8-9">8:00 AM - 9:00 AM</option>
+                            <option value="9-10">9:00 AM - 10:00 AM</option>
+                            <option value="10-11">10:00 AM - 11:00 AM (Peak)</option>
+                            <option value="11-12">11:00 AM - 12:00 PM (Peak)</option>
+                            <option value="12-13">12:00 PM - 1:00 PM (Peak)</option>
+                            <option value="13-14">1:00 PM - 2.00 PM</option>
+                            <option value="14-15">2:00 PM - 3.00 PM</option>
+                            <option value="15-16">3:00 PM - 4.00 PM(Peak)</option>
+                            <option value="16-17">4:00 PM - 5.00 PM(Peak)</option>
+                            <option value="17-18">5:00 PM - 6.00 PM(Peak)</option>
+                        </select>                   
+                    </div>
+                </div>
+                
+        
+                <div class="table">
+                    <table border="2">
+                        <tr>
+                            <td>Date</td>
+                            <td id="dateout"></td>
+                        </tr>
+                        <tr>
+                            <td>Time</td>
+                            <td id="timeout">  </td>
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td id="durationout"></td>
+                        </tr>
+                        <tr>
+                            <th>TICKETS</th>
+                            <th>CHARGES</th>
+                        </tr>
+                        <tr>
+                            <td id="sladultout">Local Adult(s)</td>
+                            <td id="sladultamount"></td>
+                        </tr>
+                        <tr>
+                            <td id="slchildout">Local Child(ren)</td>
+                            <td id="slchildamount"></td>
+                        </tr>
+                        <tr>
+                            <td id="fradultout">Foreign Adult(s)</td>
+                            <td id="fradultamount"></td>
+                        </tr>
+                        <tr>
+                            <td id="frchildout">Foreign Child(ren)</td>
+                            <td id="frchildamount"></td>
+                        </tr>
+                        <tr>
+                            <td id="infantout">Infant</td>
+                            <td>FREE</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL PAYABLE</th>
+                            <th id="totalamount"></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>       
+        </div>
+            <center><a href="" id="contbtn"><button type="submit" name="contbtn" id="cont_btn">Continue with Purchase</button></a></center>
+        </form> 
+        </section>
+
+        <script src="Buy Tickets.js"></script>
+    </body>
+</html>

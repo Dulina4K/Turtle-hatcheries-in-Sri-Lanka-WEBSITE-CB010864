@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Abel;
+}
+
+body{
+    height: 1500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(./Images/nxtlvl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.pay{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 250px;
+    padding: 40px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}label{
+    font-size: 20pt;
+    padding: 7px;
+    display: inline-block;
+    inline-size: 200px;
+
+}.pay input{
+    width: 300px;
+    height: 30px;
+    margin-left: 0px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px;
+    border-radius: 4px;
+    text-align: center;
+
+}#CVV,#expdate{
+    width: 60px;
+
+}#expcvv, #card_number, #name_on_crd{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+p{
+    padding: 10px;
+}
+
+button{
+    padding: 2%;
+    font-size: medium;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 1s;
+    transition-delay: 0.025s;
+}
+
+@media screen and (max-width: 1200px){
+    .nav ul{
+        display: grid;
+        grid-template-columns: auto;
+        flex-direction: column;
+        
+    }.nav ul li{
+        margin-bottom: 10px;
+        margin-right:5%;
+    }.pay{
+        margin: 5% 5% 23%;
+    }
+}@media screen and (max-width:600px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }.container img,h2{
+        width: auto;
+    }#card_number, #name_on_crd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+h1{
+    position: absolute;
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin-left: 100px;
+    color: white;
+    padding-top: 100px;
+}
+
+.navbar{
+    position: absolute;
+    margin-left: 250px;
+}
+
+.navbar ul li{
+    padding-top: 285px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 6px;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #39803f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 65%;
+}
+
+a:link {
+    text-decoration: none;
+    color: hwb(0 100% 0%)0%, 100%);
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px;
+    
+}
+
+.navbar ul li a{
+    font-size: 22px;
+    -webkit-text-stroke: 0.5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.alonestand1{
+    margin-top: -230px;
+    margin-left: -150px;
+
+}
+
+.deal{
+    font-size: 40px;
+    color: indigo;
+    position: absolute;
+    margin-top: 435px;
+    margin-left: 250px;
+}
+
+.padding{
+    padding: 5rem;
+    position: absolute;
+    margin-top: 470px;
+    margin-left: -300px;
+    width: 2000px;
+}
+
+
+
+.form-control:focus {
+   box-shadow: 10px 0px 0px 0px #ffffff;
+   border-color: #4ca746;
+}
+
+@media screen and (max-width:1200px){
+    .row{
+        padding-right: 200px;
+    }
+
+    h1{
+        color: indigo;
+    }
+}
